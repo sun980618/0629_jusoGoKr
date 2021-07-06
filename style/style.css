@@ -1,0 +1,361 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#headerFrame {
+    border-top: 2px solid #284a7e;
+}
+
+#headerFrame > header#header {
+    width: 1220px;
+    height: 126px;
+   /* border: 1px solid #aaa;*/
+   /* padding-bottom: 24px;*/
+    margin: 0 auto;
+   /* margin-bottom: 30px;*/
+
+    align-items: flex-end;
+}
+
+#headerFrame #headerLogo a {
+    width: 183px;
+    height: 40px;
+    /*border: 1px solid #000;*/
+    margin-bottom: 17px;
+    background-image: url(../image/headerLogo.gif);
+    display: inline-block;
+
+}
+
+div#headerMenuArea {
+    /*border: 1px solid #f80;*/
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#headerFrame nav {
+    height: 50px;
+    /*border: 1px solid #08f;*/
+
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#headerFrame nav#headerLNB {
+    text-align: right;
+    padding: 30px;
+    /*border: 1px solid #000;*/
+}
+
+#headerFrame nav#headerLNB span {
+    color: #3f50a1;
+    font-size: 15px;
+    /*border: 1px solid #000;*/
+    margin: 0 6px;
+}
+
+#headerFrame nav#headerLNB span:not(:nth-child(2)) {
+    cursor: pointer;
+}
+
+#headerFrame nav#gnb {
+    padding-left: 40px;
+}
+
+#headerFrame nav#gnb ul#mainMenu {
+    height: 100%;
+    /*border: 1px solid #000;*/
+    align-items: flex-end;
+
+    position: relative;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li {
+    padding: 20px 0;
+    /*border: 1px solid #08f;*/
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:first-child,
+#headerFrame nav#gnb ul#mainMenu>li:first-child>ul{
+    width: 180px;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(2),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(2)>ul{
+    width: 208px;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(3),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(3)>ul{
+    width: 190px;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(4),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(4)>ul{
+    width: 180px;
+}
+
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(5),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(5)>ul{
+    width: 220px;
+}
+
+#headerFrame nav#gnb ul.subMenu {
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+
+    border-color: #fff;
+    display: none;
+    position: absolute;
+    top: 51px;
+    z-index: 10;
+}
+
+#headerFrame nav#gnb ul.subMenu img {
+    position: relative;
+    left: -12px;
+}
+
+#headerFrame nav#gnb li.mainLi>a {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+}
+
+#headerFrame nav#gnb li.subLi>a {
+    font-size: 14px;
+    line-height: 42px;
+    padding: 0 20px;
+}
+
+#headerFrame nav#gnb li.subLi:hover {
+    color: #fff;
+    background-color: #f56254;
+}
+
+div#gnbBGFrame {
+    width: 100%;
+    height: 254px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+}
+
+div#gnbBG {
+    width: 100%;
+    height: 180px;
+}
+
+div#searchArea {
+    width: 100%;
+    height: 710px;
+    padding-top: 70px;
+    background-image: url(../image/visua_a.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+div#searchArea>h1 {
+    color: #fff;
+    width: 600px;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin: 50px auto;
+}
+
+div#searchArea>div#searchBG {
+    width: 770px;
+    padding: 12px 26px 25px;
+    /*border: 1px solid #f80;*/
+    border-radius: 50px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+div#searcjArea>div#searchBG span {
+    width: 36px;
+    height: 36px;
+    /*border: 1px solid #000;*/
+    cursor: pointer;
+    display: inline-block;
+}
+
+div#searchArea>div#searchBG span#closeMark {
+    color: #666;
+    font-size: 44px;
+    text-align: center;
+    line-height: 44px;
+   /* display: none; 공간도 사라지므로 안됨, 공간을 남겨둔채로 사라짐*/
+    visibility: hidden;
+    transform: translateY(7px);
+}
+
+div#searchArea>div#searchBG span#searchMark {
+    margin-right: 14px;
+    background-image: url(../image/btn_search.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    transform: translateY(12px);
+}
+
+div#searchArea>div#searchBG>input {
+    color: #666;
+    width: 620px;
+    font-size: 17px;
+    padding: 10px 0;
+    border: none;
+}
+
+div#searchArea>div#searchBG>input::placeholder {
+    color: #aaa;
+    font-size: 19px;
+}
+
+div#mainIconLNB_Frame {
+    width: 100%;
+    height: 270px;
+    padding-top: 30px;
+    background-color: rgba(26, 38, 67, 0.8);
+
+    position: absolute;
+    transform: translateY(-90%);
+}
+
+div#mainIconLNB_Frame>nav {
+    padding: 10px;
+    /*border: 1px solid #f80;*/
+
+    justify-content: center; /*가운데 배치*/
+}
+
+#mainIconLNB_Frame div.mainIconBox {
+    text-align: center;
+    /*border: 1px solid #f80;*/
+    margin: 10px 50px;
+
+    cursor: pointer;
+}
+
+#mainIconLNB_Frame div.mainIcon {
+    margin-bottom: 20px;
+}
+
+div#mainIconLNB_Frame span {
+    color: #fff;
+    font-size: 24px;
+    /*font-weight: bold;*/
+}
+
+div#jusoIntro_Frame {
+    width: 100%;
+	padding-bottom: 40px;
+    background-color: #f2f2f2;
+}
+
+div#jusoIntro {
+    width: 1200px;
+    border: 1px solid #aaa;
+	background-color: #fff;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -12%);
+}
+/*
+#jusoIntro>div {
+	border: 1px solid #000;
+}*/
+
+#jusoIntro>div#aboutJuso {
+	width: 270px;
+	padding: 24px;
+	background-color: #f8f8f8;
+}
+
+/*#jusoIntro>div#aboutJuso>ul#jusoItem {
+	border: 1px solid #000;
+}*/
+
+#jusoIntro ul#jusoItem>li {
+	width: 310px;
+	font-size: 18px;
+	line-height: 42px;
+	padding-left: 20px;
+
+	cursor: pointer;
+}
+
+.selected {
+	color: #fff;
+	font-weight: bold;
+	background-image: url(../image/tabslit_on.png);
+	-webkit-background-size: 300px 44px;
+	background-size: 276px 44px;
+	background-repeat: no-repeat;
+}
+
+#jusoIntro>div#slide {
+	-webkit-flex: 1px;
+	-moz-flex: 1px;
+	-ms-flex: 1px;
+	-o-flex: 1px;
+	flex: 1px;
+}
+
+#jusoIntro div#jusoRoadSign {
+	padding: 40px;
+}
+
+#jusoIntro div#jusoExplain{
+	width: 100%;
+	padding: 80px 40px 40px 0;
+	/*border: 1px solid #08f;*/
+}
+
+#jusoIntro #jusoExplain h2{
+	font-size: 36px;
+	padding-bottom: 20px;
+}
+
+#jusoIntro #jusoExplain hr{
+	border: none;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 30px;
+}
+
+#jusoIntro #jusoExplain p {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 30px;
+}
+
+#jusoIntro #jusoExplain p span {
+	color: #08f;
+}
+
+#jusoIntro div#slide {
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
