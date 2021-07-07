@@ -106,4 +106,37 @@ $(function () {
 
 	/*도로명 주소 슬라이드쇼 샘플(임시적용)*/
 
+	/*개발자센터 페이지(=활용 서비스)이동*/
+
+	$("div.apiBox").eq(0).click(function(){
+		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
+		window.open("addrlink/developerCenter01.html");/*새로운페이지에서 이동*/
+		return false;
+	});
+
+	$("div.apiBox").eq(1).click(function(){
+		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
+		window.open("addrlink/developerCenter02.html");/*새로운페이지에서 이동*/
+		return false;
+	});
+
+	$("div.apiBox").eq(2).click(function(){
+		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
+		window.open("addrlink/developerCenter03.html");/*새로운페이지에서 이동*/
+		return false;
+	});
+
+	$("div.apiBox").eq(3).click(function(){
+		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
+		window.open("addrlink/developerCenter04.html");/*새로운페이지에서 이동*/
+		return false;
+	});
+
+	/*개발자센터 페이지(=활용 서비스)이동*/
+
+
+
+
+
+
 });

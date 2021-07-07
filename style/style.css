@@ -347,7 +347,72 @@ div#jusoIntro {
 	overflow: hidden;
 }
 
+div#contentsFrame {
+	width: 100%;
+}
 
+div#contents {
+	width: 1200px;
+	padding: 60px 0 40px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+
+#contents>div {
+	height: 320px;
+	border: 1px solid #08f;
+}
+
+div#userService {
+	width: 600px;
+}
+
+#userService>div#api {
+	padding: 40px 0;
+	border: 1px solid #ccc;
+	margin: 10px 0;
+    background-color: #f5f7fc;
+}
+
+#userService>#api>div.apiBox {
+	text-align: center;
+
+	cursor: pointer;
+
+	-webkit-flex: 1px;
+	-moz-flex: 1px;
+	-ms-flex: 1px;
+	-o-flex: 1px;
+	flex: 1px;
+}
+
+#userService .apiBox:not(first-child) {
+	border-left: 1px solid #ddd;
+}
+
+#userService>div#api a {
+	width: 84px;
+	height: 84px;
+	line-height: 84px;
+	border: 1px solid #aaa;
+	border-radius: 45px;
+	margin: 0px auto 20px;
+
+	background-color: #fff;
+	display: block;
+}
+
+#userService>div#api span {
+	font-size: 21px;
+}
+
+div#noticeBoard {
+	width: 300px;
+}
+
+div#helpCenter {
+	width: 300px;
+}
 
 
 
