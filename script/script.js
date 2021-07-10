@@ -108,32 +108,96 @@ $(function () {
 
 	/*개발자센터 페이지(=활용 서비스)이동*/
 
-	$("div.apiBox").eq(0).click(function(){
+	$("div.apiBox").eq(0).click(function () {
 		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
-		window.open("addrlink/developerCenter01.html");/*새로운페이지에서 이동*/
+		window.open("addrlink/developerCenter01.html"); /*새로운페이지에서 이동*/
 		return false;
 	});
 
-	$("div.apiBox").eq(1).click(function(){
+	$("div.apiBox").eq(1).click(function () {
 		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
-		window.open("addrlink/developerCenter02.html");/*새로운페이지에서 이동*/
+		window.open("addrlink/developerCenter02.html"); /*새로운페이지에서 이동*/
 		return false;
 	});
 
-	$("div.apiBox").eq(2).click(function(){
+	$("div.apiBox").eq(2).click(function () {
 		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
-		window.open("addrlink/developerCenter03.html");/*새로운페이지에서 이동*/
+		window.open("addrlink/developerCenter03.html"); /*새로운페이지에서 이동*/
 		return false;
 	});
 
-	$("div.apiBox").eq(3).click(function(){
+	$("div.apiBox").eq(3).click(function () {
 		/*location.href="addrlink/developerCenter01.html"; 현재페이지에서 이동*/
-		window.open("addrlink/developerCenter04.html");/*새로운페이지에서 이동*/
+		window.open("addrlink/developerCenter04.html"); /*새로운페이지에서 이동*/
 		return false;
 	});
 
 	/*개발자센터 페이지(=활용 서비스)이동*/
 
+	/*콘텐츠영역 알림판 시작*/
+	/*토글(Toggle)->토큰값*/
+	var token = false;
+    var rotationChk = setInterval(fnNoticeSlide, 4000);
+
+    function fnNoticeSlide() {
+
+        if (token == false) {
+            $("#noticeControl>span").removeClass("noticeSelected");
+            $("#noticeControl>span").eq(1).addClass("noticeSelected");
+
+            $("div#noticeShuttleFrame").animate({
+                    "margin-left": "-285px"
+                },
+                1000,
+                function () {
+                    token = true;
+                }
+            );
+        } else {
+
+            $("#noticeControl>span").removeClass("noticeSelected");
+            $("#noticeControl>span").eq(0).addClass("noticeSelected");
+
+            $("div#noticeShuttleFrame").animate({
+                    "margin-left": "0px"
+                },
+                1000,
+                function () {
+                    token = false;
+                }
+            );
+        }
+
+    }
+
+	/*콘텐츠 영역 슬라이드 쇼 에니메이션 시작*/
+	var animToken = 0;
+    $("#noticeControl>img").click(function(){
+
+        if(animToken == 0) {
+
+            $(this).attr("src", "images/btn_play.gif");   //일시중지 상태
+            animToken = 1;
+            clearInterval(rotationChk);   // 슬라이드 순환 멈춤
+
+        } else {
+
+            $(this).attr("src", "images/btn_ps.gif");     //애니메이션 실행(=재생)
+            animToken = 0;
+
+            rotationChk = setInterval(fnNoticeSlide, 4000);
+                // 슬라이드 순환 재실행
+
+        }
+
+
+    });
+
+	/*콘텐츠 영역 슬라이드 쇼 에니메이션 끝*/
+
+
+
+	/*콘텐츠영역 알림판 끝*/
 
 
 

@@ -112,7 +112,7 @@
 			<div id="searchArea">
 				<h1>도로명 주소를 찾으시나요?</h1>
 				<div id="searchBG">
-					<input id="searchWord " type="text" placeholder="예) 한누리대로 411,국립중앙박물관, 상암동 1595, 초성검색" maxlength="50" name="searchKeyword">
+					<input id="searchWord" type="text" placeholder="예) 한누리대로 411,국립중앙박물관, 상암동 1595, 초성검색" maxlength="50" name="searchKeyword">
 					<!-- value attributr 밸류 속성-->
 					<span id="closeMark"> &times; </span>
 					<span id="searchMark"></span>
@@ -219,19 +219,27 @@
 
 						<!--div.apiBox*4>a[href=#]>img-->
 						<div class="apiBox" title="주소DB제공 새창으로 열림">
-							<a href="#"><img src="image/icon_service_1.gif" alt="icon_service01"></a>
+							<a href="#">
+								<img src="image/icon_service_1.gif" alt="icon_service01">
+							</a>
 							<span>주소 DB <br>제공</span>
 						</div>
 						<div class="apiBox" title="주소DB연계 새창으로 열림">
-							<a href="#"><img src="image/icon_service_2.png" alt="icon_service_2"></a>
+							<a href="#">
+								<img src="image/icon_service_2.png" alt="icon_service_2">
+							</a>
 							<span>주소 DB <br>연계</span>
 						</div>
 						<div class="apiBox" title="오픈API 새창으로 열림">
-							<a href="#"><img src="image/icon_service_3.png" alt="icon_service_3"></a>
+							<a href="#">
+								<img src="image/icon_service_3.png" alt="icon_service_3">
+							</a>
 							<span>오픈 <br> API</span>
 						</div>
 						<div class="apiBox" title="주소검색솔루션 새창으로 열림">
-							<a href="#"><img src="image/icon_service_4.png" alt="icon_service_4"></a>
+							<a href="#">
+								<img src="image/icon_service_4.png" alt="icon_service_4">
+							</a>
 							<span>주소 검색 <br>솔루션</span>
 						</div>
 					</div>
@@ -239,9 +247,43 @@
 				<!--userService-->
 				<div id="noticeBoard">
 
+					<header class="flex-container">
+						<h2>알림판</h2>
+						<div id="noticeControl" class="flex-container">
+							<span class="noticeSelected" id="ctrl1"></span>
+							<span id="ctrl2"></span>
+							<img src="image/btn_ps.gif" alt="일시정지" height="17">
+						</div>
+						<!--noticeControl-->
+					</header>
+					<!--상단-->
+					<div id="noticeSlide">
+						<div id="noticeShuttleFrame" class="flex-container">
+							<img src="image/notice_banner_01.jpg" alt="달라지는주소제도">
+							<img src="image/notice_banner_01.png" alt="개발자API">
+						</div>
+						<!--shuttleFrame-->
+					</div>
+					<!--slide-->
 				</div>
 				<!--noticeBoard-->
+
 				<div id="helpCenter">
+
+					<header>
+						<h2>도움센터</h2>
+					</header>
+					<!--상단-->
+
+					<div id="helpCenterInfo">
+						<span id="centerPhone">
+							1588-0061
+						</span>
+						<ul>
+							<li><span>ㆍ</span>평일 09-18시</li>
+							<li><span>ㆍ</span>점심 12-13시</li>
+						</ul>
+					</div>
 
 				</div>
 				<!--helpCenter-->
@@ -249,6 +291,38 @@
 			<!--contents-->
 		</div>
 		<!--contentsFrame-->
+
+		<nav id="footerLNB">
+			<ul id="footerMenu" class="flex-container">
+				<li><a href="#"></a>법령정보</li>
+				<li><img src="image/blit_util.gif" alt="구분선"></li>
+				<li><a href="#"></a>담당자연락처</li>
+				<li><img src="image/blit_util.gif" alt="구분선"></li>
+				<li><a href="#"></a>사이트맵</li>
+			</ul>
+		</nav>
+
+		<div id="footerFrame">
+			<footer id="footer" class="flex-container">
+
+				<div id="footerLogo"></div>
+
+				<div id="companyInfo">
+					<address>
+					30116 세종특별자치시 한누리대로 411, 644호 행정안전부 주소정책과</address>
+					<p>
+						Copyright &copy; ministry of thr Interior ans Safety, All Rights reserved.
+					</p>
+				</div>
+				<!--companyInfo-->
+
+				<div id="familySite"></div>
+				<!--familySite-->
+			</footer>
+
+		</div>
+		<!--div#footerFrame-->
+
 	</div>
 	<!--wrap-->
 </body>
